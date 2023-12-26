@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление отпусками</title>
+</head>
+<body>
+    <h1>Управление отпусками</h1>
+    <form action="server.php" method="post">
+        <label for="employeeName">ФИО сотрудника:</label>
+        <input type="text" id="employeeName" name="employeeName" required>
+
+        <label for="vacationStart">Начало отпуска:</label>
+        <input type="date" id="vacationStart" name="vacationStart" required>
+
+        <label for="vacationEnd">Конец отпуска:</label>
+        <input type="date" id="vacationEnd" name="vacationEnd" required>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
