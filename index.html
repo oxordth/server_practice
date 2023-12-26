@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Управление отпусками</title>
+    <style>
+        .btn-primary {
+            background-color: #FF8000;
+            border-color: #FF4500;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Управление отпусками</h1>
-    <form action="server.php" method="post">
-        <label for="employeeName">ФИО сотрудника:</label>
-        <input type="text" id="employeeName" name="employeeName" required>
+    <div class="container">
+        <h1 class="text-center">Отпуск</h1>
+        <form action="php/register.php" method="post">
+            <div class="form-group">
+                <label for="employeeName">ФИО сотрудника:</label>
+                <input type="text" class="employeeName" name="employeeName" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Начало отпуска:</label>
+                <input type="date" class="vacationStart" name="vacationStart" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Конец отпуска:</label>
+                <input type="date" class="vacationEnd" name="vacationEnd" placeholder="" required>
+            </div>
 
-        <label for="vacationStart">Начало отпуска:</label>
-        <input type="date" id="vacationStart" name="vacationStart" required>
+            <footer>
 
-        <label for="vacationEnd">Конец отпуска:</label>
-        <input type="date" id="vacationEnd" name="vacationEnd" required>
+                <b>Задача заключается в необходимости автоматизации бизнес-процесса, связанного с формированием ежегодных отпусков сотрудникам МИП, для дальнейшей интеграция данного решения с бухгалтерским учетом. Необходимо формулизация данного процесса, проектировать концептуальную модель базы данных (БД), создать физическую БД и автоматизировать данную задачу на основе спроектированного бизнес-процесса в малых инновационных предприятиях.</b>
 
-        <button type="submit">Отправить</button>
-    </form>
+            </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
