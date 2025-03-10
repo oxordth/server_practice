@@ -1,5 +1,4 @@
 <?php
-// Подключение к базе данных (замените параметры подключения своими)
 $servername = "localhost";
 $username = "root";
 $password = "";
